@@ -1,0 +1,686 @@
+body { 
+    overflow-x: hidden;
+    color:white;
+}
+nav{ 
+  background-color: black;
+}
+
+.pozadina{
+  background-color: #031625;
+  color:white;
+}
+
+footer{ 
+  background-color: black;
+  color:white;
+  text-align: center;
+  height: 5%;
+  padding:20px;
+  margin-top:10%;
+}
+@media (max-width: 1024px) {
+  .dogadanjaText{
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  li a{
+      text-decoration: none;
+      color:black;
+  }
+  li a:hover{
+      text-decoration: none;
+      transition: 0.8s;
+      color: black;
+  }
+  li a::after {   
+      content: '';
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: black;
+      transition: 300ms;
+  }
+  #poravnanje{
+      display: flex;
+      align-items: center;
+  }
+  #gumbSaznajVise{
+    width:8%;
+  }
+
+  li{
+      font-size: 18px;
+      padding-left:3%;
+      text-align: center;
+      padding:10px;
+      text-align: center;
+  }
+
+  #ikona{
+      padding:5px;
+  }
+  button{
+      cursor: pointer;
+      border: 0;
+      border-radius: 15px;
+      font-weight: 400;
+      width: 84%;
+      box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+      transition: 0.4s;
+  }
+  #displayGlavnaNavigacija{
+    display:none;
+  }
+  
+  #hambNavigacija{
+    visibility: visible;
+  }
+
+}
+
+.eventPadding{
+  padding:8%;
+}
+
+@media (min-width: 1024px) {
+
+  .dogadanjaBG{
+    background-image: url("../img/eventi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 45vh;
+  }
+
+  .dogadanjaText{
+    color:white;
+    padding:5%;
+  }
+
+  .dogadanjaText a{
+    color:white;
+    text-decoration: none;
+  }
+
+  .dogadanjaText a:visited{
+    color:white;
+    text-decoration: none;
+  }
+
+  .dogadanjaText a:last-child{
+    color:white;
+    text-decoration: none;
+  }
+
+  .dogadanjaText a:hover{
+    color:white;
+    text-decoration: none;
+  }
+
+  .pocetna{
+    background-image: url("img/naslovna1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100vh;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  li a{
+      text-decoration: none;
+      color:white;
+  }
+  li a:hover{
+      text-decoration: none;
+      transition: 0.8s;
+      color: white;
+  }
+  li a::after {   
+      content: '';
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: white;
+      transition: 300ms;
+  }
+  #poravnanje{
+      display: flex;
+      align-items: center;
+  }
+  #gumbSaznajVise{
+    width:8%;
+  }
+
+  li{
+      font-size: 18px;
+      padding-left:3%;
+      text-align: center;
+      padding:10px;
+      text-align: center;
+  }
+
+  #ikona{
+      padding:5px;
+  }
+  button{
+      cursor: pointer;
+      border: 0;
+      border-radius: 15px;
+      font-weight: 400;
+      width: 84%;
+      box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+      transition: 0.4s;
+  }
+  
+  #hambNavigacija{
+    visibility: hidden;
+  }
+
+}
+
+
+*, *:before, *:after 
+{ box-sizing: border-box; }
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #FFF;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+  
+}
+
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #69D2e7;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #69d2e7;
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+  
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+  
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+  
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #f38630;
+  text-decoration: none;
+  
+}
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%);
+    margin: 5px;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;          
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+  }
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: black;
+    text-decoration: none;
+}
+ 
+nav{
+    background-color: rgba(0,0,0,0.8);
+    width:100%;
+    margin:0 auto;
+}
+li a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(31, 139, 70);
+    transition: 300ms;
+}
+li a:hover::after {
+    width: 100%;
+}
+
+#o_nama {
+
+  font-size: 16px;
+  padding-top:100px;
+  line-height: 150%;
+  font-weight: bold;
+}
+#o_nama img{
+  padding-top:5%;
+}
+
+#moto {
+
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding:100px;
+}
+
+.new1{
+  border: 0.0001em solid black;
+  width:100%;
+}
+
+#motoText{
+  padding:50px;
+}
+
+#lokacija{
+  font-size: 16px;
+  padding-top:20px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+#nadolazeciEventi{
+
+  font-size: 16px;
+  padding-top:80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  #gumbSaznajVise{
+    width:22%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  #gumbProfil{
+    width:80%;
+  }
+}
+
+.eventText {
+  text-align: left;
+  padding-left:10px;
+}
+
+/** COUNT DOWN --------------------------------------------------------------------------------------------------------------**/
+
+  #velicinaSata{
+    width:100%;
+    height:70%;
+  }
+  .count-down .box-head {
+    position: relative;
+    border: 1px solid rgba(238, 238, 238, 0.219);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0px;
+    -webkit-box-shadow: 0px 0px 30px #00000017;
+            box-shadow: 0px 0px 30px #00000017;
+    z-index: 2;
+    /**margin-top:10%;**/
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .count-down .box-head {
+      padding: 8px;
+      border-radius: 10px;
+      margin-top: -20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .count-down .box-head {
+      padding: 4px;
+      border-radius: 8px;
+      margin-top: -20px;
+      
+    }
+    #velicinaSata{
+      width:90%;
+      height:90%;
+    }
+  }
+
+
+  .count-down .box-content {
+    text-align: center;
+    background-color: none;
+    background-image: url("img/count-down/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5px 10px;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .count-down .box-content {
+      padding: 30px 30px;
+      border-radius: 6px;
+    }
+    #velicinaSata{
+      width:90%;
+      height:90%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .count-down .box-content {
+      padding: 20px 20px;
+      border-radius: 4px;
+    }
+    #velicinaSata{
+      width:80%;
+      height:80%;
+    }
+  }
+  
+  .count-down .box-content .box {
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .count-down .box-content .box::before {
+    position: absolute;
+    content: "";
+    right: -3.5px;
+    top: 50%;
+    height: 7px;
+    width: 7px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: -7px;
+  }
+  
+  @media (max-width: 767px) {
+    .count-down .box-content .box::before {
+      height: 4px;
+      width: 4px;
+      margin-top: -4px;
+      right: -2px;
+    }
+    #velicinaSata{
+      width:80%;
+      height:80%;
+    }
+  }
+  
+  .count-down .box-content .box::after {
+    position: absolute;
+    content: "";
+    right: -3.5px;
+    top: 50%;
+    height: 7px;
+    width: 7px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 7px;
+  }
+  
+  @media (max-width: 767px) {
+    .count-down .box-content .box::after {
+      height: 4px;
+      width: 4px;
+      margin-top: 4px;
+      right: -2px;
+    }
+    #velicinaSata{
+      width:80%;
+      height:80%;
+    }
+  }
+  
+  .count-down .box-content .box:last-child::before {
+    display: none;
+  }
+  
+  .count-down .box-content .box:last-child::after {
+    display: none;
+  }
+  
+  .count-down .box-content .box h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: black;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .count-down .box-content .box h1 {
+      font-size: 32px;
+    }
+    #velicinaSata{
+      width:80%;
+      height:80%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .count-down .box-content .box h1 {
+      font-size: 27px;
+      font-weight: 600;
+    }
+    #velicinaSata{
+      width:80%;
+      height:80%;
+    }
+  }
+  
+  .count-down .box-content .box h2 {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-top: 5px;
+    color: black;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .count-down .box-content .box h2 {
+      font-size: 16px;
+    }
+    #velicinaSata{
+      width:80%;
+      height:80%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .count-down .box-content .box h2 {
+      font-size: 14px;
+    }
+    #velicinaSata{
+      width:80%;
+      height:80%;
+    }
+  }
+
+
+/** COUNT DOWN --------------------------------------------------------------------------------------------------------------**/
+
+
+
+@media only screen and (max-width: 992px) {
+    body { 
+        overflow-x: hidden;
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    li a{
+        text-decoration: none;
+        text-align: center;
+    }
+    li a:hover{
+        text-decoration: none;
+    }
+    li{
+        font-size: 15px;
+        padding-left:5px;
+        text-align: center;
+        padding:20px;
+    }
+    nav{
+        text-align: center;
+    }
+    #poravnanje{
+        display:block;
+    }
+    li a::after {
+        content: '';
+        width: 0px;
+        height: 1px;
+        display: block;
+        background: rgb(31, 139, 70);
+        transition: 300ms;
+    }
+    li a:hover::after {
+        width: 100%;
+    }
+    .pocetna{
+        background-image: url("img/naslovna1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height: 120vh;
+    }
+    button{
+        width:50%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+  body { 
+      overflow-x: hidden;
+  }
+  nav ul {
+      list-style-type: none;
+  }
+  li a{
+      text-decoration: none;
+      text-align: center;
+  }
+  li a:hover{
+      text-decoration: none;
+  }
+  li{
+      font-size: 15px;
+      padding-left:5px;
+      text-align: center;
+      padding:20px;
+  }
+  nav{
+      text-align: center;
+  }
+  #poravnanje{
+      display:block;
+  }
+  li a::after {
+      content: '';
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: rgb(31, 139, 70);
+      transition: 300ms;
+  }
+  li a:hover::after {
+      width: 100%;
+  }
+  .pocetna{
+      background-image: url("img/naslovna1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width:100%;
+      height: 210vh;
+  }
+  button{
+      width:50%;
+      text-align: center;
+  }
+
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/zaBuducnost.css">
+    <script src="https://kit.fontawesome.com/ed785aaed0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Zajednica za buducnost</title>
+
+    <style>
+
+        
+        body {
+            background-color: #031625;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .timeline {
+          position: relative;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        
+        .timeline::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          background-color: white;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          margin-left: -3px;
+        }
+        
+        .container {
+          padding: 10px 40px;
+          position: relative;
+          background-color: inherit;
+          width: 50%;
+        }
+        
+        .container::after {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          right: -17px;
+          background-color: white;
+          border: 4px solid #FF9F55;
+          top: 15px;
+          border-radius: 50%;
+          z-index: 1;
+        }
+        
+        .left {
+          left: -303px;
+        }
+        
+        .right {
+          left: 303px;
+        }
+        
+        .left::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          right: 30px;
+          border: medium solid white;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent white;
+        }
+        
+        .right::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          left: 30px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+        
+        .right::after {
+          left: -16px;
+        }
+        
+        .content {
+          padding: 20px 30px;
+          background-color: white;
+          position: relative;
+          border-radius: 6px;
+        }
+        
+        
+        @media screen and (max-width: 1000px) {
+          .timeline::after {
+          left: 23%;
+          }
+          
+          .container {
+          width: 70%;
+          padding-left: 50px;
+          padding-right: 25px;
+          }
+            
+          .container::before {
+          left: 60px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+          }
+        
+          .left::after, .right::after {
+          left: 15px;
+          }
+        
+
+          .left{
+            left:5%;
+          }
+          .right{
+            left:5%;
+          }
+
+        }
+        </style>
+
+
+</head>
+<body>
+
+    <nav class="menu" id="displayGlavnaNavigacija">
+        <ul>
+            <div class ="row" id="poravnanje">
+                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                    
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                    <a href="../index.html"><img src="../img/Root-Transparent-PNG.png" alt="logo" width="100px" height="100px"/></a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="dogadanja.html">DOGAĐANJA</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="onama.html">O NAMA</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="zajednice.html">ZAJEDNICE</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                  <li><a href="../engleski/zajednicaZaBuducnost.html">EN</a></li>
+                  <li><a href="#">HR</a></li>
+              </div>
+            </div>
+        </ul>
+    </nav>
+
+    <label id="hambNavigacija">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+                <div class ="row" id="poravnanje">
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        <a href="../index.html"><img src="../img/Root-Transparent-PNG.png" alt="logo" width="100px" height="100px"/></a>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="dogadanja.html">DOGAĐANJA</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="onama.html">O NAMA</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="zajednice.html">ZAJEDNICE</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                      <li><a href="../engleski/zajednicaZaBuducnost.html">EN</a></li>
+                      <li><a href="#">HR</a></li>
+                  </div>
+                </div>
+            </ul>
+    </label>
+
+    <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>Veljača 2022</h2>
+            <p>Provedeno je istraživanje i mapiranje potreba i usluga u lokalnoj zajednici, koje ćemo pratiti i ponavljati svaka tri mjeseca. Utvrđene su potrebe, ali i mogućnosti za njihovo rješavanje kroz volonterski doprinos građana. POKAZ organizira čitalački klub i kazališne susrete online i uživo, a Vestigium sprema program prenamjene tekstila, meditacije točkanja, radionice plesa, kuhanja, druženja i popravaka. </p>
+            <img src="../img/veljaca.jpg" alt="veljaca" style="width: 65%;"/>
+        </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Ožujak 2022</h2>
+            <p>Preko 30 termina aktivnosti u ožujku! Od družionice, terapije pokretom i plesom, konverzacijskog engleskog, meditacije uz točkanje, radionice podrške za mir, kuhanja, plesa, otvorenog laboratorija i novinskog kazališta do organskog vrtlarenja i tuluma razmjene odjeće. </p>
+            <img src="../img/ozujak.jpg" alt="ozujak" style="width: 70%;"/>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>Travanj 2022</h2>
+            <p>U travnju možeš podržati male, lokalne i eko OPG-ove, ponedjeljkom preuzmi zelenu košaricu, a subotom dođi i biraj na Eko placu. Chefica Nataša uči nas kuhati jednostavna i povoljna jela od svježih, lokalnih i sezonskih namirnica. Tulum razmjene odjeće događa se svake druge subote, pa ponesi 10 komada odjevnih predmeta i zamijenih ih, a na radionicama prenamjene tekstila nauči kako od potrganog kišobrana napraviti torbu za tržnicu.</p>
+            <img src="../img/travanj.jpg" alt="travanj" style="width: 70%;"/>    
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Svibanj 2022</h2>
+            <p>Pokrenuli smo Igraonicu za djecu iz Ukrajine, pozivamo te da ih dođeš posjetiti i volontirati oko kreativnih zadataka, učenja jezika ili pak pomoći u čišćenju i spremanju.  I dalje svake subote podrži naše male, lokalne i eko OPG-ove, ponedjeljkom i subotom, jer važno je znati odakle dolazi hrana koju jedemo, da li njenim uzgojem štetimo ili surađujemo sa prirodom, te da novac koji trošimo na hranu ostaje u lokalnoj ekonomiji, umjesto da kupujemo u velikim supermarketima, hranu upakiranu u plastiku, od proizvođača koji često ne poštuju radnika, štete prirodi i ostavljaju veliki ekološki otisak transportirajući hranu na drugi kraj svijeta.</p>
+            <img src="../img/svibanj,jpg" alt="svibanj" style="width: 50%;"/>    
+        </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>Lipanj 2022</h2>
+            <p>EVO NAS NA POLOVICI PROJEKTA! Do sada smo održali radionice kuhanja, vrtlarenja, točkanja, prenamjene odjeće, razmjenjivali smo odjeću, podržavali male, lokalne i eko opgove i jedni druge. Lipanj je bio obilježen radionicama PRIRODNE KOZMETIKE, pa smo uz kozmetiku naučili izrađivati eko folije za čuvanje hrane, deterdžente za rublje, sredstvo za čišćenje.</p>
+            <img src="../img/lipanj.jpg" alt="lipanj" style="width: 50%;"/>    
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Srpanj 2022</h2>
+            <p>Radionice, razmjena odjeće i mediji. U srpnju su održane radionice prirodne kozmetike i crtanja te online radionice kazališta potlačenih za odgajatelje i nastavnike. Novinari Dobro jutro Hrvatska javili su se uživo sa našeg Eko placa i izvjestili o aktivnostima iz projekta poput razmjene odjeće koja je cijelo ljeto bila aktualna zahvaljujući našim volonterima. </p>
+            <img src="../img/srpanj.jpg" alt="srpanj" style="width: 90%;"/>    
+        </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>Kolovoz 2022</h2>
+                <p>Eko plac i razmjena odjeće održavaju se subotom u Vestigiumu. Jer, ljudi koji su povezani u složne zajednice lakše prebrode krize koje dolaze. Mi imamo čvrst lanac opskrbe jer hranu nabavljamo direktno od malih, lokalnih i ekoloških proizvođača</p>
+                <img src="../img/kolovoz.jpg" alt="kolovoz" style="width: 60%;"/>   
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+              <h2>Rujan 2022</h2>
+              <p>Krenuli smo sa jesenskim programom radionica: prirodna kozmetika i sredstva za čišćenje, volonteri su nas kroz večer talijanske kulture odveli do Italije, Centar za kazalište potlačenih Pokaz započeo je sa radionicama kazališta potlačenih. Proslavili smo EUROPSKI DAN ODRŽIVIH ZAJEDNICA!</p>
+              <img src="../img/rujan.jpg" alt="rujan" style="width: 70%;"/>    
+          </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>Listopad 2022</h2>
+                <p>Započeli smo jesenski ciklus sa radionicama vrtlarenja, izradom prirodne kozmetike, crtanjem, popravcima kućanskih aparata i gledanjem dokumentarnih filmova koji mijenjaju svijet. Volonterski klub 5kontinenata sastaje se svaki utorak i subotu i planira nove akcije i aktivnosti!8 organizacija civilnog društva pohađalo je edukaciju o Održivom razvoju zajednica, u sklopu koje smo učili o moći zajednice, kulturi suradnje i integrativnoj održivosti. </p>
+                <img src="../img/listopad.jpg" alt="listopad" style="width: 80%;"/>   
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+              <h2>Studeni 2022</h2>
+              <p>Razmjenjuje se odjeća, popravljaju se elektronički uređaji, volonteri planiraju adventska događanja. Ostvarili smo suradnju sa Brazilskom ambasadom i organizirali dva događanja za Brazilce koji žive u Zagrebu, kako bi ih uključili u zajednicu i potaknuli da i oni doprinesu stvaranju Zajednice za budućnost.</p>
+              <img src="../img/studeni.jpg" alt="studeni" style="width: 80%;"/>    
+          </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+              <h2>Prosinac 2022</h2>
+              <p>Osim razmjene odjeće i adventskih događanja, puno smo se družili i smišljali ideje za novu godinu. Pričali o tome što je bilo dobro,a što je moglo bolje. Sve čime smo se cijelu godinu bavili zasladili smo kolačićima s manje otpada, a više okusa.</p>
+              <img src="../img/prosinac2.jpg" alt="prosinac" style="width: 90%;"/>    
+          </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+              <h2>Advent 2022</h2>
+              <p>Naši su volonteri pripremili i proveli bogat program događana, od kreativnih radionica, izrade vijenca i ukrasa do pečenja božićnih kolačića. Ideja ovog adventa nije bila potrošiti puno novaca, stvoriti puno otpada, konzumirati puno sadržaja, već upoznati ljude koji žive u našoj zajednici i vidjeti kako mi sami možemo doprinjeti da naši kvartovi budu bolji, ljepši, a životi ispunjeniji.​</p>
+              <img src="../img/prosinac.jpg" alt="advent" style="width: 60%;"/>    
+          </div>
+        </div>
+      </div>
+</body>
+</html>

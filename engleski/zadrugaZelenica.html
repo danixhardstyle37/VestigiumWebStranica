@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleZajednice.css">
+    <script src="https://kit.fontawesome.com/ed785aaed0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Zelenica</title>
+
+    <style>
+        body {
+            background: #031625;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1{
+            color:white;
+            text-align: center;
+            padding:20px;
+        }
+        .schedule-container {
+            border-radius: 4px;
+            background: white;
+            border-bottom: 3px solid #0a0a0b;
+            margin: 0 auto;
+            padding-top: 3px;
+            width: 540px;
+        }
+        .schedule-container h1 {
+            border-bottom: 2px solid #2d3134;
+            padding: 0 20px 20px 20px;
+        }
+        .schedule-container ul {
+            padding: 0px 0px 0 20px;
+            list-style-type: none;
+        }
+        .schedule-container ul li + li {
+            border-top: 2px solid #2d3134;
+            padding: 20px 0px 0px 0px;
+        }
+        .schedule-container ul li {
+            padding: 0px 0px 20px 0px;
+        }
+        .schedule-container ul li .frame {
+            display: table;
+            width: 100%;
+        }
+        .schedule-container ul li .frame .hour, .schedule-container ul li .frame .task, .schedule-container ul li .frame .full-time {
+            display: table-cell;
+        }
+        .schedule-container ul li .frame .hour {
+            border: 2px solid black;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            height: 22px;
+            padding: 8px;
+            text-align: center;
+            width: 22px;
+        }
+        .schedule-container ul li .frame .task {
+            font-size: 18px;
+            padding: 0 10px 0 10px;
+            text-align: left;
+        }
+        .schedule-container ul li .frame .full-time {
+            min-width: 75px;
+            padding: 0 20px 0 10px;
+            text-align: right;
+        }
+ 
+    </style>
+</head>
+<body>
+
+    <nav class="menu" id="displayGlavnaNavigacija">
+        <ul>
+            <div class ="row" id="poravnanje">
+                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                    
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                    <a href="../engleski/index.html"><img src="../img/Root-Transparent-PNG.png" alt="logo" width="100px" height="100px"/></a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="dogadanja.html">EVENTS</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="onama.html">ABOUT US</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="zajednice.html">COMMUNITIES</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="kontakt.html">CONTACT</a></li>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <li><a href="#">EN</a></li>
+                    <li><a href="../podstranice/zadrugaZelenica.html">HR</a></li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+
+    <label id="hambNavigacija">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+                <div class ="row" id="poravnanje">
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        <a href="../engleski/index.html"><img src="../img/Root-Transparent-PNG.png" alt="logo" width="100px" height="100px"/></a>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="dogadanja.html">EVENTS</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="onama.html">ABOUT US</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="zajednice.html">COMMUNITIES</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="kontakt.html">CONTACT</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="#">EN</a></li>
+                        <li><a href="../podstranice/zadrugaZelenica.html">HR</a></li>
+                    </div>
+                </div>
+            </ul>
+    </label>
+
+    <h1>Cooperative zelenica</h1>
+    <div class="container" style="padding:2%;">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <img style="width: 100%; padding:5%;" src="../img/zelenicaZajednica.jpg" alt="zelenica"/>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <h4 style="color: white; padding:20px;">The program is created in cooperation with members, citizens, artists, creatives.
+                Which means that - if you have a suggestion, contact us at zadruga.zelenica@gmail.com
+                
+                The ZDC will be open during the events, which you can follow on our Facebook page or through the newsletter.
+            </h4>
+            <h4 style="color: white; padding:20px;">
+                In ZDC you can borrow a tool or a book from our library, organize an event, promotion, celebration.
+                
+                We are currently working on projects such as a community chicken coop and a shared orchard, and in our long-term plans we also see a shared housing project - the future Eco Village.
+            </h4>
+            <h4 style="color: white; padding:20px;">
+                Donations of 50-100 HRK are welcome to cover the costs of materials, organization and performers.
+            </h4>
+        </div>
+    </div>
+    </div>
+    
+        <div class="schedule-container">
+        <h2 style="text-align: center;">PROGRAM</h2>
+        <ul>
+          <li>
+            <div class="frame">
+              <div class="hour">
+                1
+              </div>
+              <div class="task">
+                Say a word to me and I'll write you a song
+              </div>
+              <div class="full-time">
+                10 AM
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="frame">
+              <div class="hour">
+                2
+              </div>
+              <div class="task">
+                Theater Poco Loco: Grandfather and the turnip
+              </div>
+              <div class="full-time">
+                11 AM
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="frame">
+              <div class="hour">
+                3
+              </div>
+              <div class="task">
+                Sowing turnips, identifying edible plants
+              </div>
+              <div class="full-time">
+                11:30 AM
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="frame">
+              <div class="hour">
+                4
+              </div>
+              <div class="task">
+                Poeticacao – chocolate edible workshop
+              </div>
+              <div class="full-time">
+                12:00 PM
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="frame">
+              <div class="hour">
+                5
+              </div>
+              <div class="task">
+                Flower jar, decoupage and planting flowers
+              </div>
+              <div class="full-time">
+                4 PM
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="frame">
+              <div class="hour">
+                6
+              </div>
+              <div class="task">
+                A concert for a good night's sleep
+              </div>
+              <div class="full-time">
+                6 PM
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <footer>
+        <h5>Copyright © Vestigium 2023</h5>
+    </footer>
+</body>
+</html>

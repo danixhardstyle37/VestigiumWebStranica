@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleDogadanja.css">
+    <script src="https://kit.fontawesome.com/ed785aaed0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+    
+    <title>Dogadanja</title>
+    
+</head>
+<body>
+    <div class="pozadina">
+
+        <div class="dogadanjaBG">
+
+        <nav class="menu" id="displayGlavnaNavigacija">
+            <ul>
+                <div class ="row" id="poravnanje">
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        <a href="../index.html"><img src="../img/Root-Transparent-PNG.png" alt="logo" width="100px" height="100px"/></a>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                        
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="#">DOGAĐANJA</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="onama.html">O NAMA</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="zajednice.html">ZAJEDNICE</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <li><a href="../engleski/dogadanja.html">EN</a></li>
+                        <li><a href="#">HR</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="dogadanjaText">
+            <h1>NADOLAZEĆI EVENTI</h1>
+        </div>
+    </div>
+        <label id="hambNavigacija">
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+                <ul>
+                    <div class ="row" id="poravnanje">
+                        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                            
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                            <a href="../index.html"><img src="../img/Root-Transparent-PNG.png" alt="logo" width="100px" height="100px"/></a>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12" id="pom">
+                            
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                            <li><a href="#">DOGAĐANJA</a></li>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                            <li><a href="onama.html">O NAMA</a></li>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                            <li><a href="zajednice.html">ZAJEDNICE</a></li>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                            <li><a href="kontakt.html">KONTAKT</a></li>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                            <li><a href="../engleski/dogadanja.html">EN</a></li>
+                            <li><a href="#">HR</a></li>
+                        </div>
+                    </div>
+                </ul>
+        </label>
+
+        <div class="container">
+            <div class="row">
+                <div class="eventPadding">  
+                    <h1 style="text-align:center;" id="sredina">Eko plac</h1>           
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="../img/ekoplac.jpg" alt="Eko plac" style="width: 100%;"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="count-down">
+                        <div class="container" id="velicinaSata">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="box-head">
+                                        <div class="box-content">
+                                            <div class="box">
+                                                <h1 id="days">00</h1>
+                                                <h2 id="daystxt">Dana</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="hours">00</h1>
+                                                <h2 id="hourstxt">Sati</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="minutes">00</h1>
+                                                <h2 id="minutestxt">Minuta</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="seconds">00</h1>
+                                                <h2 id="secondstxt">Sekundi</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="eventText">
+                    <h3>Posjetite naš eko plac u Vrbanima. Radujemo se Vašem dolasku.</h3>
+                    <h3>Datum: 10.2.2023.</h3>
+                    <h3>Vrijeme: 7:30-18:30</h3>
+                    </div>
+                    <button class="btn-grad" id="gumbProcitajVise">Dodaj u kalendar</button>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="row">
+                <div class="eventPadding">  
+                    <h1 style="text-align:center;">Sat šivanja</h1>           
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="../img/sivanje.jpg" alt="Eko plac" style="width: 100%;"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="count-down">
+                        <div class="container" id="velicinaSata">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="box-head">
+                                        <div class="box-content">
+                                            <div class="box">
+                                                <h1 id="days2">00</h1>
+                                                <h2 id="daystxt">Dana</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="hours2">00</h1>
+                                                <h2 id="hourstxt">Sati</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="minutes2">00</h1>
+                                                <h2 id="minutestxt">Minuta</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="seconds2">00</h1>
+                                                <h2 id="secondstxt">Sekundi</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="eventText">
+                    <h3>Učite jedni druge šivati i pri tome se odlično zabavite.</h3>
+                    <h3>Datum: 11.2.2023.</h3>
+                    <h3>Vrijeme: 8:00-9:00</h3>
+                    </div>
+                    <button class="btn-grad" id="gumbProcitajVise">Dodaj u kalendar</button>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="row">
+                <div class="eventPadding">  
+                    <h1 style="text-align:center;">Vrtlarstvo za djecu</h1>           
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="../img/vrtlarstvo.jpg" alt="Vrtlarstvo" style="width: 100%;"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="count-down">
+                        <div class="container" id="velicinaSata">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="box-head">
+                                        <div class="box-content">
+                                            <div class="box">
+                                                <h1 id="days3">00</h1>
+                                                <h2 id="daystxt">Dana</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="hours3">00</h1>
+                                                <h2 id="hourstxt">Sati</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="minutes3">00</h1>
+                                                <h2 id="minutestxt">Minuta</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="seconds3">00</h1>
+                                                <h2 id="secondstxt">Sekundi</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="eventText">
+                    <h3>Uz mnogo zabave i novih iskustava pomozite nam uljepšati kvar. Ćekamo Vas u vrtu!</h3>
+                    <h3>Datum: 11.2.2023.</h3>
+                    <h3>Vrijeme: 10:00-12:00</h3>
+                    </div>
+                    <button class="btn-grad" id="gumbProcitajVise">Dodaj u kalendar</button>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="row">
+                <div class="eventPadding">  
+                    <h1 style="text-align:center;">Vege veče u Vestigium-u</h1>           
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="../img/kuhanje.jpg" alt="Kuhanje" style="width: 100%;"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="count-down">
+                        <div class="container" id="velicinaSata">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="box-head">
+                                        <div class="box-content">
+                                            <div class="box">
+                                                <h1 id="days4">00</h1>
+                                                <h2 id="daystxt">Dana</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="hours4">00</h1>
+                                                <h2 id="hourstxt">Sati</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="minutes4">00</h1>
+                                                <h2 id="minutestxt">Minuta</h2>
+                                            </div>
+                                            <div class="box">
+                                                <h1 id="seconds4">00</h1>
+                                                <h2 id="secondstxt">Sekundi</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="eventText">
+                    <h3>Provedite veče uz ukupsna vege jela i najbolje društvo. Za djecu i odrasle.</h3>
+                    <h3>Datum: 11.2.2023.</h3>
+                    <h3>Vrijeme: 19:00-21:00</h3>
+                    </div>
+                    <button class="btn-grad" id="gumbProcitajVise">Dodaj u kalendar</button>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+
+
+    <script src="assets/js/count-up.min.js"></script>
+    <script>
+        const finaleDate = new Date("February 10, 2023 07:30:00").getTime();
+        const finaleDate2 = new Date("February 11, 2023 08:00:00").getTime();
+        const finaleDate3 = new Date("February 11, 2023 10:00:00").getTime();
+        const finaleDate4 = new Date("February 11, 2023 19:00:00").getTime();
+
+        const timer = () => {
+            const now = new Date().getTime();
+            let diff = finaleDate - now;
+            let diff2 = finaleDate2 - now;
+            let diff3 = finaleDate3 - now;
+            let diff4 = finaleDate4 - now;
+
+            if (diff < 0) {
+                document.querySelector('.alert').style.display = 'block';
+                document.querySelector('.container').style.display = 'none';
+            }
+            if (diff2 < 0) {
+                document.querySelector('.alert').style.display = 'block';
+                document.querySelector('.container').style.display = 'none';
+            }
+            if (diff3 < 0) {
+                document.querySelector('.alert').style.display = 'block';
+                document.querySelector('.container').style.display = 'none';
+            }
+            if (diff4 < 0) {
+                document.querySelector('.alert').style.display = 'block';
+                document.querySelector('.container').style.display = 'none';
+            }
+
+            let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
+            let seconds = Math.floor(diff % (1000 * 60) / 1000);
+
+            let days2 = Math.floor(diff2 / (1000 * 60 * 60 * 24));
+            let hours2 = Math.floor(diff2 % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let minutes2 = Math.floor(diff2 % (1000 * 60 * 60) / (1000 * 60));
+            let seconds2 = Math.floor(diff2 % (1000 * 60) / 1000);
+
+            let days3 = Math.floor(diff3 / (1000 * 60 * 60 * 24));
+            let hours3 = Math.floor(diff3 % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let minutes3 = Math.floor(diff3 % (1000 * 60 * 60) / (1000 * 60));
+            let seconds3 = Math.floor(diff3 % (1000 * 60) / 1000);
+            
+            let days4 = Math.floor(diff4 / (1000 * 60 * 60 * 24));
+            let hours4 = Math.floor(diff4 % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let minutes4 = Math.floor(diff4 % (1000 * 60 * 60) / (1000 * 60));
+            let seconds4 = Math.floor(diff4 % (1000 * 60) / 1000);
+
+            days <= 99 ? days = `0${days}` : days;
+            days <= 9 ? days = `00${days}` : days;
+            hours <= 9 ? hours = `0${hours}` : hours;
+            minutes <= 9 ? minutes = `0${minutes}` : minutes;
+            seconds <= 9 ? seconds = `0${seconds}` : seconds;
+
+            days2 <= 99 ? days2 = `0${days2}` : days2;
+            days2 <= 9 ? days2 = `00${days2}` : days2;
+            hours2 <= 9 ? hours2 = `0${hours2}` : hours2;
+            minutes2 <= 9 ? minutes2 = `0${minutes2}` : minutes2;
+            seconds2 <= 9 ? seconds2 = `0${seconds2}` : seconds2;
+
+            days3 <= 99 ? days3 = `0${days3}` : days3;
+            days3 <= 9 ? days3 = `00${days3}` : days3;
+            hours3 <= 9 ? hours3 = `0${hours3}` : hours3;
+            minutes3 <= 9 ? minutes3 = `0${minutes3}` : minutes3;
+            seconds3 <= 9 ? seconds3 = `0${seconds3}` : seconds3;
+
+            days4 <= 99 ? days4 = `0${days4}` : days4;
+            days4 <= 9 ? days4 = `00${days4}` : days4;
+            hours4 <= 9 ? hours4 = `0${hours4}` : hours4;
+            minutes4 <= 9 ? minutes4 = `0${minutes4}` : minutes4;
+            seconds4 <= 9 ? seconds4 = `0${seconds4}` : seconds4;
+
+            document.querySelector('#days').textContent = Number(days);
+            document.querySelector('#hours').textContent = hours;
+            document.querySelector('#minutes').textContent = minutes;
+            document.querySelector('#seconds').textContent = seconds;
+
+            document.querySelector('#days2').textContent = Number(days2);
+            document.querySelector('#hours2').textContent = hours2;
+            document.querySelector('#minutes2').textContent = minutes2;
+            document.querySelector('#seconds2').textContent = seconds2;
+
+            document.querySelector('#days3').textContent = Number(days3);
+            document.querySelector('#hours3').textContent = hours3;
+            document.querySelector('#minutes3').textContent = minutes3;
+            document.querySelector('#seconds3').textContent = seconds3;
+
+            document.querySelector('#days4').textContent = Number(days4);
+            document.querySelector('#hours4').textContent = hours4;
+            document.querySelector('#minutes4').textContent = minutes4;
+            document.querySelector('#seconds4').textContent = seconds4;
+
+        }
+
+        timer();
+        setInterval(timer, 1000);
+    </script>
+
+
+  
+<footer>
+    <h5>Copyright © Vestigium 2023</h5>
+</footer>
+
+</div>
+</body>
+</html>
